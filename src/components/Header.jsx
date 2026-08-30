@@ -1,6 +1,9 @@
-import React from "react";
+import { signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 
 const Header = () => {
+  const session = useSession();
+
   // ✅ Define reusable mask style
   const bgShape = {
     WebkitMaskImage: "url('/assets/img/shape/info_card_icon_bg_shape_1_1.png')",
@@ -19,11 +22,13 @@ const Header = () => {
           <div className="row justify-content-center justify-content-lg-between align-items-center gy-2">
             {/* Logo */}
             <div className="col-auto d-none d-lg-block">
-              <div className="header-logo">
-                <a href="index.html">
-                  <img src="/assets/img/logo.svg" alt="Donat" />
-                </a>
-              </div>
+              <Link href="/" className="header-logo d-flex align-items-center">
+                <img src="/assets/img/logo.png" alt="Logo" width={50} />
+                <h6 className="m-0 d-flex flex-column fs-6">
+                  <span>EX-Student</span>
+                  <span>Association</span>
+                </h6>
+              </Link>
             </div>
 
             {/* Info cards */}
@@ -111,13 +116,19 @@ const Header = () => {
               <nav className="main-menu d-none d-lg-block">
                 <ul>
                   <li>
-                    <a href="index.html">Home</a>
+                    <Link href="/">মুলপাতা </Link>
                   </li>
                   <li>
-                    <a href="about.html">About Us</a>
+                    <Link href="/about">আমাদের সম্পর্কে</Link>
                   </li>
                   <li>
-                    <a href="#">Donations</a>
+                    <Link href="/events">ইভেন্টস</Link>
+                  </li>{" "}
+                  <li>
+                    <Link href="/volunteer">ভলেন্টিয়ার</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">যোগাযোগ</Link>
                   </li>
                   <li className="menu-item-has-children">
                     <a href="#">Pages</a>
@@ -167,45 +178,43 @@ const Header = () => {
                         <a href="error.html">Error Page</a>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact Us</a>
-                  </li>
+                  </li>{" "}
+                  {session?.status === "authenticated" && (
+                    <li>
+                      <button onClick={() => signOut()}>Logout</button>
+                    </li>
+                  )}
                 </ul>
               </nav>
 
               {/* Notice Text */}
-              <p className="header-notice">
+              <p className="header-notice"></p>
+            </div>
+
+            {/* Buttons */}
+            <div className="header-button">
+              {session?.status === "authenticated" ? (
+                <Link href="/profile" className="icon-btn style2">
+                  <i className="far fa-user"></i>
+                </Link>
+              ) : (
+                <Link href="/auth" className="icon-btn style2">
+                  <i className="fa-solid fa-right-to-bracket"></i>
+                </Link>
+              )}
+
+              <Link
+                href="/become-volunteer"
+                className="th-btn style1 d-lg-block d-none"
+              >
                 <img
                   className="me-1"
                   src="/assets/img/icon/heart-icon.svg"
                   alt="img"
                 />
-                আসুন স্বেচ্ছাসেবক হই...
-              </p>
-            </div>
+                আসুন স্বেচ্ছাসেবক হই
+              </Link>
 
-            {/* Buttons */}
-            <div className="header-button">
-              <button
-                type="button"
-                className="icon-btn style2 searchBoxToggler d-lg-block d-none"
-              >
-                <i className="far fa-user"></i>
-              </button>
-              {/* <button type="button" className="icon-btn sideMenuToggler">
-                <span className="badge">5</span>
-                <i className="fa-regular fa-cart-shopping"></i>
-              </button> */}
-              <a
-                href="contact.html"
-                className="th-btn style3 d-lg-block d-none"
-              >
-                <i className="fas fa-heart me-2"></i> Donate Now
-              </a>
               <button
                 type="button"
                 className="icon-btn th-menu-toggle d-lg-none"

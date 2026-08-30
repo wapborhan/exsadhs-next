@@ -16,13 +16,13 @@ export default function MainWrapper({ children }) {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500); 
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [pathname]);
 
-  const hideHeaderRoutes = [ "/auth/signin", "/auth/signup"];
-  const hideFooterRoutes = ["/auth/signin", "/auth/signup"];
+  const hideHeaderRoutes = ["/auth", "/auth/signup"];
+  const hideFooterRoutes = ["/auth", "/auth/signup"];
   const shouldHideHeader = hideHeaderRoutes.includes(pathname);
   const shouldHideFooter = hideFooterRoutes.includes(pathname);
 

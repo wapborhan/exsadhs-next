@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -34,9 +35,11 @@ const Footer = () => {
           <div class="subscribe-box">
             <div class="row gy-40 align-items-center justify-content-center">
               <div class="col-xl-6">
-                <h4 class="subscribe-box_title">Subscribe to Our Newsletter</h4>
+                <h4 class="subscribe-box_title">
+                  আমাদের নিউজলেটারে সাবস্ক্রাইব করুন
+                </h4>
                 <p class="subscribe-box_text">
-                  Regular inspections and feedback mechanisms
+                  নিয়মিত পরিদর্শন এবং প্রতিক্রিয়া ব্যবস্থা
                 </p>
               </div>
               <div class="col-xl-6 col-lg-8">
@@ -65,13 +68,13 @@ const Footer = () => {
               <div class="widget footer-widget">
                 <div class="th-widget-about">
                   <div class="about-logo">
-                    <a href="index.html">
-                      <img src="assets/img/logo-white.svg" alt="Donat" />
-                    </a>
+                    <Link href="/">
+                      <img src="assets/img/logo.png" alt="EX-SADHS" />
+                    </Link>
                   </div>
                   <p class="about-text">
-                    Our secure online donation platform allows you to make
-                    contributions quickly and safely. Choose from various.
+                    সদস্যদের প্রতি নিবেদিত একটি অলাভজনক সংস্থা,শিক্ষা ও সমাজের
+                    সেবায় চিরকাল ঐক্যবদ্ধ।
                   </p>
                   <a href="contact.html" class="th-btn">
                     <i class="fas fa-heart me-2"></i> Donate Now
@@ -136,12 +139,12 @@ const Footer = () => {
                       <i class="fal fa-phone"></i>
                       <div
                         class="bg-shape1"
-                       style={bgShape}
+                        style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                       <div
                         class="bg-shape2"
-                      style={bgShape}
+                        style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                     </div>
@@ -157,12 +160,12 @@ const Footer = () => {
                       <i class="fal fa-envelope-open"></i>
                       <div
                         class="bg-shape1"
-                      style={bgShape}
+                        style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                       <div
                         class="bg-shape2"
-                       style={bgShape}
+                        style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                     </div>
@@ -198,8 +201,10 @@ const Footer = () => {
           <div class="row justify-content-center gy-3 align-items-center">
             <div class="col-lg-12">
               <p class="copyright-text text-center">
-                <i class="fal fa-copyright"></i> Copyright 2025
-                <a href="index.html">Donat</a>. All Rights Reserved.
+                <i class="fal fa-copyright"></i> Copyright{" "}
+                {new Date().getFullYear()} EX-SADHS All Rights Reserved.
+                Designed by{" "}
+                <Link href="https://www.wapborhan.com">Borhan Uddin</Link>.
               </p>
             </div>
           </div>

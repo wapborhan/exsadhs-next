@@ -4,11 +4,7 @@ const Hero = () => {
   return (
     <>
       <div className="th-hero-wrapper hero-1" id="hero">
-        <div
-          className="swiper th-slider hero-slider1"
-          id="heroSlide1"
-          data-slider-options='{"effect":"fade", "autoHeight": "true"}'
-        >
+        <div className="swiper th-slider hero-slider1" id="heroSlide1">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div
@@ -32,7 +28,7 @@ const Hero = () => {
                           data-ani="slideinup"
                           data-ani-delay="0.2s"
                         >
-                          Give Hope For Homeless
+                          Welcome to EX-SADHS
                         </span>
                         <h1 className="hero-title text-white">
                           <span
@@ -40,16 +36,20 @@ const Hero = () => {
                             data-ani="slideinup"
                             data-ani-delay="0.4s"
                           >
-                            Helping Each Other Can
-                          </span>
-                          <span
-                            className="title1"
-                            data-ani="slideinup"
-                            data-ani-delay="0.4s"
-                          >
-                            Make World Better
+                            Ex-Students' Association of Dharampur High School
                           </span>
                         </h1>
+
+                        <p
+                          className="text-white h5 text-center"
+                          data-ani="slideinup"
+                          data-ani-delay="0.6s"
+                        >
+                          সহপাঠীদের সাথে পুনরায় সংযোগ স্থাপন করুন, আমাদের
+                          ঐতিহ্য উদযাপন করুন এবং প্রাক্তন শিক্ষার্থীদের একটি
+                          শক্তিশালী সম্প্রদায় গড়ে তুলুন। আমাদের মর্যাদাপূর্ণ
+                          নেটওয়ার্কে যোগদান করুন।
+                        </p>
                         <div
                           className="btn-wrap justify-content-center"
                           data-ani="slideinup"

@@ -20,7 +20,7 @@ export const authOptions = {
         if (!user) return null;
 
         // ⚠️ In production use bcrypt.compare(password, user.password)
-        const isPassOK = password === user.password;
+        const isPassOK = await User.comparePassword(password);
         if (!isPassOK) return null;
 
         return user;

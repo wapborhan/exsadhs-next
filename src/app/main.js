@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import User from "./user";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/authOptions";
+import { useSession } from "next-auth/react";
 
 const main = async () => {
-  const session = await getServerSession(authOptions);
+  const session = useSession();
   return (
     <main className={styles.main}>
       <h2>EX-Student Association Dharampur high school.</h2>
