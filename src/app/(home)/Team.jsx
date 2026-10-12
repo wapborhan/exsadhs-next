@@ -16,8 +16,8 @@ const Team = () => {
       </div>
       <div className="container">
         <div className="title-area text-center">
-          <span className="sub-title">Our Volunteer</span>
-          <h2 className="sec-title">Meet The Optimistic Volunteer</h2>
+          <span className="sub-title">আমাদের স্বেচ্ছাসেবক</span>
+          <h2 className="sec-title">আশাবাদী স্বেচ্ছাসেবকের সাথে দেখা করুন</h2>
         </div>
         <div className="slider-area">
           <Swiper

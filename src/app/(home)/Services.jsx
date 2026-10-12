@@ -56,9 +56,9 @@ const Services = () => {
         <div className="row justify-content-center">
           <div className="col-lg-7">
             <div className="title-area text-center">
-              <span className="sub-title">Charity Services</span>
+              <span className="sub-title">পরিষেবা </span>
               <h2 className="sec-title">
-                We Do it for all People Humanist Services
+                আমরা সকল শিক্ষার্থীর জন্য মানবতাবাদী পরিষেবা প্রদান করি
               </h2>
             </div>
           </div>
@@ -97,12 +97,12 @@ const Services = () => {
               </div>
               <div className="box-content">
                 <h3 className="box-title">
-                  <a href="about.html">Educations</a>
+                  <a href="about.html">শিক্ষা</a>
                 </h3>
                 <p className="box-text">
-                  Explore our charity website to discover impactful projects,
-                  opportunities, and ways to donate, helping those in need
-                  thrive.
+                  অভাবী শিক্ষার্থীদের উন্নতিতে সাহায্য করার জন্য আমাদের দাতব্য
+                  ওয়েবসাইটটি ঘুরে দেখুন, যেখানে রয়েছে কার্যকর প্রকল্প, সুযোগ
+                  এবং অনুদান দেওয়ার উপায়।
                 </p>
                 <a href="about.html" className="th-btn">
                   Learn More<i className="fas fa-arrow-up-right ms-2"></i>
@@ -120,11 +120,12 @@ const Services = () => {
               </div>
               <div className="box-content">
                 <h3 className="box-title">
-                  <a href="about.html">Medical Help</a>
+                  <a href="about.html">চিকিৎসা সহায়তা</a>
                 </h3>
                 <p className="box-text">
-                  Join us in making a difference! Our charity website connects
-                  you with volunteer, donation options, and inspiring stories.
+                  পরিবর্তন আনতে আমাদের সাথে যোগ দিন! আমাদের দাতব্য ওয়েবসাইট
+                  আপনাকে স্বেচ্ছাসেবক, অনুদানের বিকল্প এবং অনুপ্রেরণামূলক গল্পের
+                  সাথে সংযুক্ত করে।
                 </p>
                 <a href="about.html" className="th-btn">
                   Learn More<i className="fas fa-arrow-up-right ms-2"></i>

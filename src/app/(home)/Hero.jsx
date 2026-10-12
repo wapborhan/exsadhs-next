@@ -75,14 +75,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {/* <div class="th-hero-wrapper hero-3" id="hero">
+      {/* <div className="th-hero-wrapper hero-3" id="hero">
         <div
-          class="shape-mockup hero-shape-3-1 d-lg-block d-none"
+          className="shape-mockup hero-shape-3-1 d-lg-block d-none"
           style={{ top: "20%", left: "50%" }}
         >
-          <div class="color-masking shake">
+          <div className="color-masking shake">
             <div
-              class="masking-src bg-mask"
+              className="masking-src bg-mask"
               data-mask-src="assets/img/hero/hero-bg-shape2-3.png"
               style={{
                 WebkitMaskImage: "url('assets/img/hero/hero-bg-shape2-3.png')",
@@ -97,12 +97,12 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="shape-mockup hero-shape-3-2 jump"
+          className="shape-mockup hero-shape-3-2 jump"
           style={{ top: "25%", left: "5%" }}
         >
-          <div class="color-masking">
+          <div className="color-masking">
             <div
-              class="masking-src bg-mask"
+              className="masking-src bg-mask"
               style={{
                 WebkitMaskImage: "url('assets/img/hero/hero-bg-shape2-1.png')",
                 WebkitMaskRepeat: "no-repeat",
@@ -117,12 +117,12 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="shape-mockup hero-shape-3-3 jump"
+          className="shape-mockup hero-shape-3-3 jump"
           style={{ left: "-2%", bottom: "0" }}
         >
-          <div class="color-masking2">
+          <div className="color-masking2">
             <div
-              class="masking-src bg-mask"
+              className="masking-src bg-mask"
               style={{
                 WebkitMaskImage: "url('assets/img/shape/hand-shape3.png')",
                 WebkitMaskRepeat: "no-repeat",
@@ -137,7 +137,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          class="hero-bg-3-1 background-image bg-mask"
+          className="hero-bg-3-1 background-image bg-mask"
           data-bg-src="assets/img/hero/hero_bg_3_1.jpg"
           style={{
             backgroundImage: `url("assets/img/hero/hero_bg_3_1.jpg")`,
@@ -150,31 +150,31 @@ const Hero = () => {
           }}
           data-mask-src="assets/img/hero/hero-bg-shape3-1.png"
         ></div>
-        <div class="container">
-          <div class="row gx-40 align-items-center">
-            <div class="col-lg-6">
-              <div class="hero-style3">
-                <span class="sub-title after-none">Give Hope For Homeless</span>
-                <h1 class="hero-title">
-                  <span class="title1">Donate For A</span>
-                  <span class="title2">
-                    Better <span class="text-theme2 d-inline-block">World</span>
+        <div className="container">
+          <div className="row gx-40 align-items-center">
+            <div className="col-lg-6">
+              <div className="hero-style3">
+                <span className="sub-title after-none">Give Hope For Homeless</span>
+                <h1 className="hero-title">
+                  <span className="title1">Donate For A</span>
+                  <span className="title2">
+                    Better <span className="text-theme2 d-inline-block">World</span>
                   </span>
                 </h1>
-                <p class="hero-text">
+                <p className="hero-text">
                   Explore the variety of volunteer opportunities available. From
                   event planning and fundraising to fieldwork and administrative
                   support
                 </p>
-                <div class="btn-wrap">
-                  <a href="about.html" class="th-btn">
-                    Discover Now<i class="fa-solid fa-arrow-up-right ms-2"></i>
+                <div className="btn-wrap">
+                  <a href="about.html" className="th-btn">
+                    Discover Now<i className="fa-solid fa-arrow-up-right ms-2"></i>
                   </a>
                   <a
                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                    class="play-btn style3 popup-video"
+                    className="play-btn style3 popup-video"
                   >
-                    <i class="fas fa-play"></i>
+                    <i className="fas fa-play"></i>
                   </a>
                 </div>
               </div>

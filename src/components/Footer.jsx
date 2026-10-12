@@ -12,48 +12,48 @@ const Footer = () => {
   };
   return (
     <footer
-      class="footer-wrapper footer-default"
+      className="footer-wrapper footer-default"
       style={{
         backgroundImage: `url("assets/img/bg/footer-default-bg-mask.png")`,
       }}
       data-bg-src="assets/img/bg/footer-default-bg-mask.png"
     >
       <div
-        class="footer-bg-shape2 shape-mockup jump"
+        className="footer-bg-shape2 shape-mockup jump"
         style={{ top: "30%", right: "0" }}
       >
         <img src="assets/img/shape/footer-bg-shape3.png" alt="img" />
       </div>
       <div
-        class="footer-bg-shape3 shape-mockup d-none"
+        className="footer-bg-shape3 shape-mockup d-none"
         style={{ bottom: "0", right: "0" }}
       >
         <img src="assets/img/shape/footer-bg-shape2.png" alt="img" />
       </div>
-      <div class="footer-top">
-        <div class="container">
-          <div class="subscribe-box">
-            <div class="row gy-40 align-items-center justify-content-center">
-              <div class="col-xl-6">
-                <h4 class="subscribe-box_title">
+      <div className="footer-top">
+        <div className="container">
+          <div className="subscribe-box">
+            <div className="row gy-40 align-items-center justify-content-center">
+              <div className="col-xl-6">
+                <h4 className="subscribe-box_title">
                   আমাদের নিউজলেটারে সাবস্ক্রাইব করুন
                 </h4>
-                <p class="subscribe-box_text">
+                <p className="subscribe-box_text">
                   নিয়মিত পরিদর্শন এবং প্রতিক্রিয়া ব্যবস্থা
                 </p>
               </div>
-              <div class="col-xl-6 col-lg-8">
-                <form class="newsletter-form">
-                  <div class="form-group">
+              <div className="col-xl-6 col-lg-8">
+                <form className="newsletter-form">
+                  <div className="form-group">
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="email"
                       placeholder="Enter Email Address"
                       required=""
                     />
                   </div>
-                  <button type="submit" class="th-btn style3">
-                    <i class="fas fa-paper-plane"></i>
+                  <button type="submit" className="th-btn style3">
+                    <i className="fas fa-paper-plane"></i>
                   </button>
                 </form>
               </div>
@@ -61,133 +61,128 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="widget-area">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-6 col-xl-auto">
-              <div class="widget footer-widget">
-                <div class="th-widget-about">
-                  <div class="about-logo">
+      <div className="widget-area">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-md-6 col-xl-auto">
+              <div className="widget footer-widget">
+                <div className="th-widget-about">
+                  <div className="about-logo">
                     <Link href="/">
                       <img src="assets/img/logo.png" alt="EX-SADHS" />
                     </Link>
                   </div>
-                  <p class="about-text">
+                  <p className="about-text">
                     সদস্যদের প্রতি নিবেদিত একটি অলাভজনক সংস্থা,শিক্ষা ও সমাজের
                     সেবায় চিরকাল ঐক্যবদ্ধ।
                   </p>
-                  <a href="contact.html" class="th-btn">
-                    <i class="fas fa-heart me-2"></i> Donate Now
+                  <a href="contact.html" className="th-btn">
+                    <i className="fas fa-heart me-2"></i>
+                    এখনই দান করুন
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-auto">
-              <div class="widget widget_nav_menu footer-widget">
-                <h3 class="widget_title">Quick Links</h3>
-                <div class="menu-all-pages-container">
-                  <ul class="menu">
+            <div className="col-sm-6 col-xl-auto">
+              <div className="widget widget_nav_menu footer-widget">
+                <h3 className="widget_title">দ্রুত লিঙ্ক</h3>
+                <div className="menu-all-pages-container">
+                  <ul className="menu">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <a href="about.html">আমাদের সম্পর্কে</a>
                     </li>
                     <li>
-                      <a href="blog.html">Our News</a>
+                      <a href="blog.html">আমাদের সংবাদ</a>
                     </li>
                     <li>
-                      <a href="about.html">Our Campaign</a>
+                      <a href="about.html">আমাদের প্রচারাভিযান</a>
                     </li>
                     <li>
-                      <a href="contact.html">Privacy policy</a>
+                      <a href="contact.html">গোপনীয়তা নীতি</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xl-auto">
-              <div class="widget widget_nav_menu footer-widget">
-                <h3 class="widget_title">Our Service</h3>
-                <div class="menu-all-pages-container">
-                  <ul class="menu">
-                    <li>
-                      <a href="donate-now.html">Give Donation</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">Education Support</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">Food Support</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">Health Support</a>
-                    </li>
-                    <li>
-                      <a href="gallery.html">Our Campaign </a>
+                      <a href="contact.html">আমাদের সাথে যোগাযোগ করুন</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-xl-auto">
-              <div class="widget footer-widget">
-                <div class="th-widget-contact">
-                  <h3 class="widget_title">Contact Us</h3>
-                  <div class="info-card">
-                    <div class="box-icon">
-                      <i class="fal fa-phone"></i>
+            <div className="col-sm-6 col-xl-auto">
+              <div className="widget widget_nav_menu footer-widget">
+                <h3 className="widget_title">আমাদের পরিষেবা</h3>
+                <div className="menu-all-pages-container">
+                  <ul className="menu">
+                    <li>
+                      <a href="donate-now.html">অনুদান দিন</a>
+                    </li>
+                    <li>
+                      <a href="faq.html">শিক্ষা সহায়তা</a>
+                    </li>
+                    <li>
+                      <a href="faq.html">স্বাস্থ্য সহায়তা</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-xl-auto">
+              <div className="widget footer-widget">
+                <div className="th-widget-contact">
+                  <h3 className="widget_title">আমাদের সাথে যোগাযোগ করুন</h3>
+                  <div className="info-card">
+                    <div className="box-icon">
+                      <i className="fal fa-phone"></i>
                       <div
-                        class="bg-shape1"
+                        className="bg-shape1"
                         style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                       <div
-                        class="bg-shape2"
+                        className="bg-shape2"
                         style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                     </div>
-                    <div class="box-content">
-                      <p class="box-text">Call us any time:</p>
-                      <h4 class="box-title">
+                    <div className="box-content">
+                      <p className="box-text">আমাদের ফোন করুন:</p>
+                      <h4 className="box-title">
                         <a href="tel:16336547896">+163-3654-7896</a>
                       </h4>
                     </div>
                   </div>
-                  <div class="info-card">
-                    <div class="box-icon">
-                      <i class="fal fa-envelope-open"></i>
+                  <div className="info-card">
+                    <div className="box-icon">
+                      <i className="fal fa-envelope-open"></i>
                       <div
-                        class="bg-shape1"
+                        className="bg-shape1"
                         style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                       <div
-                        class="bg-shape2"
+                        className="bg-shape2"
                         style={bgShape}
                         data-mask-src="assets/img/shape/info_card_icon_bg_shape_1_1.png"
                       ></div>
                     </div>
-                    <div class="box-content">
-                      <p class="box-text">Email us any time:</p>
-                      <h4 class="box-title">
+                    <div className="box-content">
+                      <p className="box-text">আমাদের ইমেল করুন:</p>
+                      <h4 className="box-title">
                         <a href="mailto:info@donat.com">info@donat.com</a>
                       </h4>
                     </div>
                   </div>
-                  <div class="th-social style2">
+                  <div className="th-social style2">
                     <a href="https://www.facebook.com/">
-                      <i class="fab fa-facebook-f"></i>
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                     <a href="https://www.twitter.com/">
-                      <i class="fab fa-twitter"></i>
+                      <i className="fab fa-twitter"></i>
                     </a>
                     <a href="https://www.youtube.com/">
-                      <i class="fab fa-youtube"></i>
+                      <i className="fab fa-youtube"></i>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <i class="fab fa-linkedin-in"></i>
+                      <i className="fab fa-linkedin-in"></i>
                     </a>
                   </div>
                 </div>
@@ -196,14 +191,17 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="copyright-wrap">
-        <div class="container">
-          <div class="row justify-content-center gy-3 align-items-center">
-            <div class="col-lg-12">
-              <p class="copyright-text text-center">
-                <i class="fal fa-copyright"></i> Copyright{" "}
-                {new Date().getFullYear()} EX-SADHS All Rights Reserved.
-                Designed by{" "}
+      <div className="copyright-wrap">
+        <div className="container">
+          <div className="row justify-content-center gy-3 align-items-center">
+            <div className="col-lg-12">
+              <p className="copyright-text text-center">
+                <i className="fal fa-copyright"></i> কপিরাইট ২০২৬ -{" "}
+                {new Date().getFullYear().toLocaleString("bn-BD", {
+                  year: "numeric",
+                  useGrouping: false,
+                })}{" "}
+                EX-SADHS সর্বস্বত্ব সংরক্ষিত। ডিজাইন করেছেন{" "}
                 <Link href="https://www.wapborhan.com">Borhan Uddin</Link>.
               </p>
             </div>

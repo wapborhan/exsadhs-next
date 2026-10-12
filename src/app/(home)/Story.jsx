@@ -2,56 +2,58 @@ import React from "react";
 
 const Story = () => {
   return (
-    <div class="story-area-1 overflow-hidden space">
-      <div class="container">
-        <div class="row gy-40 justify-content-between flex-row-reverse align-items-center">
-          <div class="col-xl-7">
-            <div class="story-img-box1">
-              <div class="box-wrap d-inline-block">
-                <div class="img1">
+    <div className="story-area-1 overflow-hidden space">
+      <div className="container">
+        <div className="row gy-40 justify-content-between flex-row-reverse align-items-center">
+          <div className="col-xl-7">
+            <div className="story-img-box1">
+              <div className="box-wrap d-inline-block">
+                <div className="img1">
                   <img src="assets/img/normal/story_1_1.png" alt="img" />
                 </div>
-                <div class="story-shape1-1 jump-reverse">
+                <div className="story-shape1-1 jump-reverse">
                   <img src="assets/img/shape/story_shape1_1.png" alt="img" />
                 </div>
-                <div class="story-card movingX">
-                  <h5 class="box-title">Adam Cruz</h5>
-                  <p class="box-text">
-                    Our success stories highlight the real life impact of your
-                    donations & the resilience of those we help. These
-                    narratives showcase the power of compassion.
+                <div className="story-card movingX">
+                  <h5 className="box-title">অ্যাডাম ক্রুজ</h5>
+                  <p className="box-text">
+                    আমাদের সাফল্যের গল্পগুলো আপনার অনুদানের বাস্তব জীবনের প্রভাব
+                    এবং যাদের আমরা সাহায্য করি তাদের অদম্য মনোবলকে তুলে ধরে। এই
+                    আখ্যানগুলো সহানুভূতির শক্তিকে প্রদর্শন করে।
                   </p>
                   <div
-                    class="quote-icon"
+                    className="quote-icon"
                     data-mask-src="assets/img/icon/quote.svg"
                   ></div>
                 </div>
-                <div class="year-counter">
-                  <p class="year-counter_text">
-                    Years of <span>Experience</span>
+                <div className="year-counter">
+                  <p className="year-counter_text">
+                    বছরের <span>অভিজ্ঞতা</span>
                   </p>
-                  <div class="year-counter_number">
-                    <span class="counter-number">16</span>
+                  <div className="year-counter_number">
+                    <span className="counter-number">১৬</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-5">
-            <div class="story-wrap1">
-              <div class="title-area mb-0">
-                <span class="sub-title before-none">Success Story</span>
-                <h2 class="sec-title">
-                  We Help Fellow Nonprofits Access the Funding Tools, Training
+          <div className="col-xl-5">
+            <div className="story-wrap1">
+              <div className="title-area mb-0">
+                <span className="sub-title before-none">সাফল্যের গল্প</span>
+                <h2 className="sec-title">
+                  আমরা সহযোগী অলাভজনক সংস্থাগুলোকে তহবিল সংগ্রহের সরঞ্জাম ও
+                  প্রশিক্ষণ পেতে সাহায্য করি।
                 </h2>
-                <p class="mt-30">
-                  Our secure online donation platform allows you to make
-                  contributions quickly and safely. Choose from various payment
-                  methods and set up one-time.exactly.
+                <p className="mt-30">
+                  আমাদের সুরক্ষিত অনলাইন অনুদান প্ল্যাটফর্ম আপনাকে দ্রুত এবং
+                  নিরাপদে অনুদান দেওয়ার সুযোগ করে দেয়। বিভিন্ন পেমেন্ট পদ্ধতি
+                  থেকে বেছে নিন এবং এককালীন সঠিক ব্যবস্থাটি সেট আপ করুন।
                 </p>
-                <div class="btn-wrap mt-35">
-                  <a href="about.html" class="th-btn style-border">
-                    Our Success Story <i class="fas fa-arrow-up-right ms-2"></i>
+                <div className="btn-wrap mt-35">
+                  <a href="about.html" className="th-btn style-border">
+                    আমাদের সাফল্যের গল্প{" "}
+                    <i className="fas fa-arrow-up-right ms-2"></i>
                   </a>
                 </div>
               </div>

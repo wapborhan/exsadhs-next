@@ -212,7 +212,7 @@ const Header = () => {
                   src="/assets/img/icon/heart-icon.svg"
                   alt="img"
                 />
-                আসুন স্বেচ্ছাসেবক হই
+                আসুন যুক্ত হই
               </Link>
 
               <button
